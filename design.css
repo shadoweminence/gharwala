@@ -1,0 +1,97 @@
+
+body{
+  background-color: black;
+  color: deeppink;
+}
+
+.left-column{
+  display: flex;
+
+  
+}
+.right-column{
+  width: 50%;
+  align-self:right;
+}
+
+
+.container{
+  align-self: center;
+      align-items: center;
+      padding: 20px;
+      padding-bottom: 600px;
+      padding-top: 10%;
+      background-color:cornsilk
+ }
+ .container form{
+  padding: 10px;
+  border-radius: 50px;
+  background-color: darkgoldenrod;
+  width: 500px;
+ }
+ .container form h1{
+  font-size: 30px;
+  color: gold;
+ }
+ .container form table{
+  padding: 10px 15px;
+  font-size: 20px;
+ }
+ .container form table input{
+  /* width: 100%; */
+  padding: 10px 20px;
+  font-size: 20px;
+ }
+
+
+.form-container{
+ align-self: center;
+     align-items: center;
+     padding: 20px;
+     padding-bottom: 600px;
+     padding-top: 10%;
+     background: greenyellow;
+}
+.form-container form{
+ padding: 20px ;
+ border-radius: 50px;
+ background-color: antiquewhite;
+ text-align: center;
+ width: 400px;
+}
+.form-container form h3{
+ font-size: 30px;
+ margin-bottom: 10px;
+ color: cyan;
+}
+
+.form-container form table{
+ /* width: 100%; */
+ padding: 10px 15px;
+ font-size: 20px;
+}
+.form-container form table input{
+ width: 100%;
+ padding: 10px 20px;
+ font-size: 15px;
+}
+.form-container form table .form-btn{
+ background-color: darkorange;
+ color: antiquewhite;
+ text-transform: capitalize;
+ font-size: 30px;
+ cursor: pointer;
+}
+.form-container form .form-btn:hover{
+ background: red;
+}
+
+.form-container form .error-msg{
+ margin:10px 0;
+ display: block;
+ background: crimson;
+ color: #fff;
+ border-radius: 5px;
+ font-size: 20px;
+ padding: 10px;
+}
