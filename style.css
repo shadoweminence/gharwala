@@ -1,0 +1,512 @@
+/* this is for the about page description */
+
+.conatainer{
+  background:black;
+  color: #f5f5f5;
+}
+
+
+
+/* this is for the pic in the description  */
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.image-container ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation: marquee 10s linear infinite;
+}
+
+.image-container ul li {
+  display: inline-block;
+}
+
+.image-container ul li  img {
+  height: 200px;
+  width: auto;
+  margin-right: 20px;
+}
+.image-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  height: 200px;
+}
+
+/* for start page  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins",sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background: #000;
+
+}
+
+/* for the background image next image is in the container below  */
+.background{
+  position: fixed;
+  background: url(img/bg.jpg) no-repeat;
+  background-position: center;
+  background-size:cover ;
+  height: 100vh;
+  width: 100%;
+  filter: blur(10px);
+}
+
+
+
+.container{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  height: 95%;
+  margin-top: 20px;
+  background: url(img/bg.jpg) no-repeat;
+  background-position: ckenter;
+  background-size:cover ;
+  border-radius: 20px;
+  overflow: hidden;
+  
+  
+}
+
+
+/* the items are facebook, the logo and the like */
+.item{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  width: 58%;
+  height: 100%;
+  color: #fff;
+  background: transparent;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
+
+}
+
+
+
+
+
+
+/* for the header file  */
+.header{
+  position: relative;
+top: 0;
+left: 0;
+width: 100%;
+padding: 25px 13%;
+background: transparent;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+
+}
+
+
+/* this is the logo of header  */
+.logo{
+position: absolute;
+top: 0;
+left: 0;
+width: 250px;
+height: 200px;
+float: left;
+padding-left: 5%;
+padding-top: 2%;
+background: transparent;
+display: flex;
+overflow: hidden;
+background-color: transparent;
+
+}
+
+/* now for the rest ofthe navbar  */
+.navbar a{
+position: relative;
+top: 50px;
+left: 50px;
+font-size: 16px;
+color: #fff;
+margin-right: 30px;
+text-decoration: none;
+}
+.navbar a::after{
+content: "";
+position: absolute;
+left: 0;
+width: 100%;
+height: 2px;
+background: #fff;
+bottom: -5px;
+border-radius: 5px;
+transform: translateY(10px);
+opacity: 0;
+transition: .5s ease;
+}
+.navbar a:hover:after{
+transform: translateY(0);
+opacity: 1;
+}
+
+
+
+
+/* the text ite refers to the texts i.e., description */
+.text-item h2{
+  font-size: 40px;
+  line-height: 1;
+}
+
+.text-item p{
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+/* social icon is for the icns of fb abd the like */
+.social-icon a i{
+  color: #fff;
+  font-size: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.social-icon a:hover i{
+  transform: scale(1.2);
+}
+
+
+/* now for the login register form  */
+.container .login-section{
+  position: absolute;
+  top: 0;
+  left:65%;
+  right: 0;
+  width: calc(100% - 58%);
+  height: 100%;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.login-section .form-box{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* for the register form  */
+.login-section .form-box.register{
+  transform: translateX(430px);
+  transition: transform .6s ease;
+  transition-delay: 0s;
+}
+
+
+.login-section.active .form-box.register{
+  transform: translateX(0px);
+  transition-delay: .7s;
+}
+
+
+/* for the login form  */
+.login-section .form-box.login{
+  transform: translateX(0px);
+  transition: transform .6s ease;
+  transition-delay: 0.7s;
+}
+.login-section.active .form-box.login{
+  transform: translateX(430px);
+  transition-delay: 0s;
+}
+
+
+
+.login-section .form-box h2{
+  text-align: center;
+  font-size: 25px;
+}
+
+.form-box .input-box{
+  width: 340px;
+  height: 50px;
+  border-bottom: 2px solid#fff;
+  margin: 30px 0;
+  position: relative;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding-right: 28px;
+  color: wheat;
+
+
+}
+
+/* for the labeling in the form */
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 600px;
+  pointer-events: none;
+  transition: .5s ease;
+
+}
+
+/* the icons like lock and etc */
+.input-box .icon{
+  position: absolute;
+  top: 13px;
+  right: 0;
+  font-size: 19px;
+}
+.input-box input:focus~ label,
+.input-box input:valid~ label{
+  top: -5px;
+}
+
+
+/* for the remeber password option  */
+.remember-password{
+  font-size: 14px;
+  font-weight: 500;
+  margin: -15px 0 15px ;
+  display: flex;
+  justify-content: space-between;
+}
+.remember-password label input{
+  accent-color: #fff;
+  margin-right: 3px;
+
+}
+.remember-password a{
+  color: #fff;
+  text-decoration: none;
+}
+.remember-password a:hover{
+  text-decoration: underline;
+}
+
+
+/* for the submit button  */
+.btn{
+  background: #fff;
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #f72d7a;
+  font-size: 16px;
+  color: #fff;
+  box-shadow: rgba(0,0,0,0.4);
+}
+
+/* btn for the form o reset password  */
+.btn1{
+  background: #fff;
+  width: 50%;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #f72d7a;
+  font-size: 16px;
+  color: #fff;
+  box-shadow: rgba(0,0,0,0.4);
+}
+
+/* btn for the request form  */
+.btn2{
+  background: #fff;
+  width: 20%;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #f72d7a;
+  font-size: 16px;
+  color: #fff;
+  box-shadow: rgba(0,0,0,0.4);
+}
+
+/* for the login or register link  */
+.create-account{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 25px;
+}
+.create-account p a{
+  color: #fff;
+  /* font-weight: 600px; */
+  text-decoration: none;
+}
+.create-account p a:hover{
+  text-decoration: underline;
+}
+
+
+
+/* homepage ko */
+
+
+.abcd{
+ color: #fff;
+  display: grid;
+  place-items: center;
+}
+.abcd h1{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+
+
+.image-container{
+  color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+   width: 100%;
+   height: 600px;
+}
+
+
+.image-container ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation: marquee 10s linear infinite;
+}
+
+.image-container ul li {
+  display: inline-block;
+}
+
+.image-container ul li  img {
+  height: 400px;
+  width: 500px;
+  margin-right: 2px;
+}
+
+.contact{
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+  padding: 20px;
+  background-color: grey;
+
+}
+.reqpage{
+  color: moccasin;
+}
+
+
+
+
+
+/* this is for the forgot password and reset password form  */
+.forgot{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+
+}
+.forgot_password{
+  position: absolute;
+  top: 35%;
+  left:42%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: 100%;
+  color: #f72d7a;
+}
+
+
+/* this is for the input box of forgot password and reset password  */
+.forgot .input-box{
+  width: 340px;
+  height: 50px;
+  border-bottom: 2px solid#fff;
+  margin: 30px 0;
+  position: relative;
+}
+
+.request{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background-color:#fff;
+}
+/* this is for the input box of forgot password and reset password  */
+.request .input-box{
+  width: 340px;
+  height: 50px;
+  color: #111;
+    border-bottom: 2px solid#000;
+  margin: 30px 0;
+  position: relative;
+}
+
+.container_req{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 35%;
+  height: 65%;
+  margin-top: 20px;
+  background: url(img/bg.jpg) no-repeat;
+  background-position: center;
+  background-size:cover ;
+  border-radius: 20px;
+  overflow: hidden;
+  
+  
+}
+
